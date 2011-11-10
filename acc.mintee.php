@@ -39,7 +39,7 @@ class Mintee_acc {
 	{
 		$this->EE =& get_instance();
 				
-		$this->sections[''] = '<iframe style="border:1px solid #ccc; width:830px; height:600px;" src="http://pilotmade.com/mint/"></iframe>';
+		$this->sections[''] = '<iframe style="border:1px solid #ccc; width:830px; height:600px;" src="//' . $_SERVER['SERVER_NAME'] .'/mint/"></iframe>';
 				
 	}
 	
@@ -48,4 +48,4 @@ class Mintee_acc {
 }
  
 /* End of file acc.ticket_count.php */
-/* Location: /system/expressionengine/third_party/ticket_count/acc.ticket_count.php */
+/* Location: /system/expressionengine/third_party/mintee/acc.mintee.php */
