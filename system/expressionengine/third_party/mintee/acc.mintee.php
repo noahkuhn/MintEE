@@ -11,9 +11,7 @@
  * @since		Version 2.0
  * @filesource
  */
- 
-// ------------------------------------------------------------------------
- 
+  
 /**
  * MintEE Accessory
  *
@@ -21,7 +19,7 @@
  * @subpackage	Addons
  * @category	Accessory
  * @author		Noah Kuhn
- * @link		
+ * @link		http://pilotmade.com
  */
  
 class Mintee_acc {
@@ -29,7 +27,7 @@ class Mintee_acc {
 	public $name			= 'MintEE';
 	public $id				= 'mintee';
 	public $version			= '1.0';
-	public $description		= 'Shows your Mint Stats';
+	public $description		= 'Shows your Mint Stats in your EE install';
 	public $sections		= array();
 	
 	/**
@@ -38,14 +36,10 @@ class Mintee_acc {
 	public function set_sections()
 	{
 		$this->EE =& get_instance();
-				
 		$this->sections[''] = '<iframe style="border:1px solid #ccc; width:830px; height:600px;" src="//' . $_SERVER['SERVER_NAME'] .'/mint/"></iframe>';
-				
 	}
-	
-	// ----------------------------------------------------------------
-	
+		
 }
  
-/* End of file acc.ticket_count.php */
+/* End of file acc.mintee.php */
 /* Location: /system/expressionengine/third_party/mintee/acc.mintee.php */
